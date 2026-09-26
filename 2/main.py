@@ -11,10 +11,10 @@ for x in f:
 invalid_ids = 0
 for x in range(len(r)):
     for i in range(r[x][0], r[x][1] + 1):
-        match = re.search(r'^(\d+)\1$', str(i))
+        match = re.search(r"^(\d+)(?:\1)+$", str(i))
+        #match = re.search(r'^(\d+)\1$', str(i))
         if match:    
             invalid_ids += i
-            print(i)
 
 
 print(invalid_ids)
