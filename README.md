@@ -10,3 +10,8 @@ One folder per day, each containing `main.py` — the solution.
 
     cd <day>
     python main.py
+
+## License
+
+[MIT](LICENSE)
+
